@@ -14,28 +14,55 @@ body {
 #main {
     border:#1d1c1c solid 2px;
     padding: 20px;
-    width: 320px;
+    width: 380px;
     background: #ffffff;
     text-align: center;
-    border-left: 20%;
-    height: 300px;
+    height: 600px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    border-radius: 5%;
+    border-radius: 2%;
     z-index: 1;
 }
 .grid-container {
-        z-index: 3;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        border: 2px solid purple;
-        width: 300px;
-        height: 200px;
-    }
-.container > div {
-        background-color: #f1f1f1;
-        border: 1px solid black;
-        padding: 10px;
-        font-size: 30px;
-        text-align: center;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid rgba(7, 6, 7, 0.445);
+    width: 360px;
+    height: 500px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.grid-container button {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    gap: 15px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.grid-container button:hover {
+    background-color: #818080
+}
+#display {
+    border: 2px solid #1d1c1c;
+    width: 360px;
+    height: 50px;
+    background: #ffffff;
+    margin: 10px 0 0 10px;       
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 26px;
+    font-weight: bold;
+    
+    display: flex;               
+    justify-content: flex-end;   
+    align-items: center;         
+    padding-right: 10px;         
+
+    box-sizing: border-box;       
+    white-space: nowrap;          
+    overflow: hidden;             
+    text-overflow: ellipsis;      
 }
