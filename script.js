@@ -61,3 +61,16 @@ buttons.forEach(button => {
     display.textContent = currentValue;     
   });
 });
+const correctPassword = "deez"; // change to whatever you want
+const input = document.getElementById("passwordInput");
+const secb = document.getElementById("secb");
+
+secb.addEventListener("click", () => {
+      const userInput = prompt("Enter password:");
+      if (userInput === correctPassword) {
+        alert("lolol");
+        window.open("https://voyager-online.org/wp-content/uploads/2024/06/Screen-Shot-2024-06-06-at-9.35.59-AM.png")
+      } else {
+        alert("no");
+      }
+});
