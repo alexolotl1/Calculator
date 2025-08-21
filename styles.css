@@ -9,6 +9,7 @@ body {
     align-items: top;
     height: 100vh;
     margin-top: 50px;
+    z-index: 1;
 }
 #main {
     border:#1d1c1c solid 2px;
@@ -20,4 +21,21 @@ body {
     height: 300px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     border-radius: 5%;
+    z-index: 1;
+}
+.grid-container {
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 2px solid purple;
+        width: 300px;
+        height: 200px;
+    }
+.container > div {
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
 }
